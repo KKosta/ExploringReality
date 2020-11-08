@@ -1,0 +1,728 @@
+p {
+  margin-bottom: 10px;
+  font-family: Karla, sans-serif;
+  font-size: 16px;
+  line-height: 28px;
+}
+
+.section {
+  display: block;
+  padding-top: 120px;
+  padding-bottom: 160px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.section.sign-up {
+  padding-top: 96px;
+  padding-bottom: 120px;
+  background-color: rgba(61, 190, 179, 0.1);
+}
+
+.section.hosts {
+  padding-top: 0px;
+}
+
+.text-block {
+  width: 80%;
+  margin: 0px auto 12px;
+  font-family: Karla, sans-serif;
+  color: #081928;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.text-block.big {
+  font-size: 28px;
+  line-height: 40px;
+}
+
+.text-block.small {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-size: 16px;
+  line-height: 28px;
+  text-align: left;
+}
+
+.text-block.intro {
+  margin-top: 96px;
+  text-align: left;
+}
+
+.text-block.sign-up-pop-up {
+  width: 80%;
+  margin-top: 32px;
+  margin-bottom: 32px;
+  text-align: center;
+}
+
+.text-block.company {
+  margin-left: 0px;
+  text-align: left;
+}
+
+.text-block.pop-up {
+  width: 100%;
+}
+
+.image {
+  width: 40vw;
+  margin-top: 15vh;
+}
+
+.container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.podcast-table {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 32px;
+  padding-bottom: 56px;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  border-top: 1px solid rgba(8, 25, 40, 0.15);
+  border-bottom: 1px none rgba(8, 25, 40, 0.15);
+}
+
+.podcast-table.coming-soon {
+  opacity: 0.6;
+}
+
+.heading {
+  font-family: Karla, sans-serif;
+  font-size: 28px;
+  line-height: 40px;
+  font-weight: 400;
+}
+
+.heading.hosts {
+  margin-bottom: 0px;
+}
+
+.heading.cta {
+  margin-bottom: 32px;
+  color: #3dbeb3;
+  font-size: 48px;
+  line-height: 56px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.paragraph {
+  color: rgba(29, 31, 46, 0.7);
+}
+
+.column {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.button {
+  display: inline-block;
+  margin-top: 16px;
+  border-radius: 20px 20px 2px;
+  background-color: #3dbeb3;
+  font-family: Karla, sans-serif;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #39b3a8;
+}
+
+.button.pop-up {
+  height: 50px;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  background-color: #3dbeb3;
+}
+
+.button.pop-up.red {
+  background-color: #e62137;
+}
+
+.button.coming-soon {
+  background-color: rgba(8, 25, 40, 0.6);
+  font-size: 16px;
+}
+
+.button.listen-now {
+  opacity: 1;
+}
+
+.footer {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 80px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #081928;
+  color: #fff;
+}
+
+.lightbox {
+  position: fixed;
+  left: 0%;
+  top: 0%;
+  right: 0%;
+  bottom: 0%;
+  z-index: 10;
+  display: none;
+  overflow: visible;
+  width: 100vw;
+  height: 100vh;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: rgba(8, 25, 40, 0.3);
+}
+
+.div-block {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 560px;
+  height: auto;
+  padding: 40px 24px 56px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 20px;
+  background-color: #fff;
+}
+
+.heading-2 {
+  margin-bottom: 32px;
+  font-family: Karla, sans-serif;
+  text-align: center;
+}
+
+.email-field {
+  display: inline-block;
+  width: 100%;
+  height: 50px;
+  margin-top: 16px;
+  padding-left: 24px;
+  border: 1px none #000;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 20px;
+  background-color: #fff;
+  font-family: Karla, sans-serif;
+  color: #081928;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.email-field::-webkit-input-placeholder {
+  color: #081928;
+}
+
+.email-field:-ms-input-placeholder {
+  color: #081928;
+}
+
+.email-field::-ms-input-placeholder {
+  color: #081928;
+}
+
+.email-field::placeholder {
+  color: #081928;
+}
+
+.email-field.pop-up {
+  background-color: rgba(8, 25, 40, 0.1);
+}
+
+.form {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  margin-bottom: 0px;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+
+.form-block {
+  width: 70%;
+}
+
+.section-2 {
+  margin-top: 97px;
+  margin-bottom: 97px;
+}
+
+.heading-3 {
+  margin-top: 0px;
+  margin-bottom: 96px;
+  font-family: Karla, sans-serif;
+  color: #081928;
+  font-weight: 700;
+}
+
+.div-block-2 {
+  margin-top: 80px;
+  padding-left: 0px;
+  background-color: #e62137;
+}
+
+.text-block-2 {
+  display: block;
+  width: 30px;
+  height: 50px;
+  margin-bottom: 8px;
+  padding-right: 8px;
+  padding-bottom: 0px;
+  padding-left: 8px;
+  font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+  color: #fff;
+  font-size: 30px;
+  line-height: 50px;
+  font-style: normal;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.text-block-2.w--current {
+  text-decoration: none;
+}
+
+.container-2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.error-message {
+  padding: 18px 23px;
+  text-align: center;
+}
+
+.text-block-3 {
+  font-family: Karla, sans-serif;
+  color: #081928;
+  font-size: 16px;
+  line-height: 28px;
+  text-align: center;
+}
+
+.success-message {
+  border-style: none;
+  border-width: 1px;
+  border-color: #3dbeb3;
+  background-color: rgba(61, 190, 179, 0.1);
+  font-family: Karla, sans-serif;
+  font-size: 30px;
+}
+
+.text-block-4 {
+  font-size: 28px;
+  line-height: 30px;
+}
+
+.paragraph-2 {
+  width: 50%;
+}
+
+.footer-text {
+  width: 50%;
+  margin-bottom: 0px;
+  opacity: 0.75;
+  text-align: center;
+}
+
+.close-pop-up {
+  position: relative;
+  left: 48%;
+  top: -20px;
+  right: 0px;
+  bottom: 0%;
+  color: rgba(8, 25, 40, 0.5);
+  font-size: 30px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.host {
+  margin-bottom: 36px;
+}
+
+.image-2 {
+  border-radius: 20px 20px 2px;
+}
+
+.image-3 {
+  border-radius: 2px 20px 20px;
+}
+
+.logo-div {
+  position: relative;
+  width: 600px;
+  height: 200px;
+  max-width: 900px;
+  margin-top: 10vh;
+}
+
+.exploring {
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  right: auto;
+  bottom: auto;
+  height: 100px;
+}
+
+.reality {
+  position: absolute;
+  left: auto;
+  top: auto;
+  right: 0%;
+  bottom: 0%;
+  height: 100px;
+}
+
+.podcast-button {
+  margin-right: 20px;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.podcast-button-wrapper {
+  margin-top: 48px;
+}
+
+.badge {
+  width: 220px;
+}
+
+@media screen and (max-width: 991px) {
+  .section {
+    padding-top: 96px;
+    padding-bottom: 120px;
+  }
+
+  .text-block {
+    width: auto;
+  }
+
+  .text-block.intro {
+    width: 80%;
+    margin-top: 64px;
+  }
+
+  .image {
+    width: 60vw;
+  }
+
+  .podcast-table {
+    display: block;
+    margin-left: 0px;
+    padding-right: 24px;
+    padding-left: 24px;
+  }
+
+  .heading.cta {
+    width: 85%;
+    font-size: 40px;
+    line-height: 48px;
+  }
+
+  .column {
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+  .lightbox {
+    display: none;
+    width: 100vw;
+  }
+
+  .heading-3 {
+    padding-left: 24px;
+  }
+
+  .host {
+    padding-right: 24px;
+    padding-left: 24px;
+  }
+
+  .logo-div {
+    width: 60vw;
+    height: 160px;
+    margin-top: 5vh;
+  }
+
+  .exploring {
+    height: 80px;
+  }
+
+  .reality {
+    height: 80px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .image {
+    width: 80vw;
+  }
+
+  .podcast-table {
+    display: block;
+  }
+
+  .column {
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+  }
+
+  .logo-div {
+    height: 120px;
+  }
+
+  .exploring {
+    height: 60px;
+  }
+
+  .reality {
+    height: 60px;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .section {
+    padding-top: 24px;
+    padding-bottom: 48px;
+  }
+
+  .text-block.sign-up-pop-up {
+    width: 90%;
+    margin-top: 16px;
+  }
+
+  .image {
+    width: 80vw;
+    margin-top: 5vh;
+  }
+
+  .heading.cta {
+    font-size: 32px;
+    line-height: 40px;
+  }
+
+  .button.pop-up {
+    margin-top: 0px;
+    margin-left: auto;
+    padding-right: 24px;
+    padding-left: 24px;
+    border-radius: 20px 20px 2px;
+    text-align: center;
+  }
+
+  .button.pop-up.red {
+    display: block;
+    width: 100%;
+    margin-top: 0px;
+    margin-left: auto;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    text-align: center;
+  }
+
+  .lightbox {
+    display: none;
+  }
+
+  .div-block {
+    width: 90%;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+
+  .email-field {
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+
+  .email-field.pop-up {
+    margin-bottom: 8px;
+    border-top-left-radius: 2px;
+  }
+
+  .form {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .form-block {
+    width: 90%;
+  }
+
+  .heading-3 {
+    font-size: 28px;
+    line-height: 40px;
+  }
+
+  .div-block-2 {
+    margin-top: 32px;
+  }
+
+  .footer-text {
+    margin-bottom: 0px;
+  }
+
+  .close-pop-up {
+    left: 40%;
+  }
+
+  .logo-div {
+    width: 85vw;
+    height: 100px;
+  }
+
+  .exploring {
+    height: 50px;
+  }
+
+  .reality {
+    height: 50px;
+  }
+
+  .podcast-button {
+    width: 70%;
+    margin-bottom: 32px;
+    text-align: center;
+  }
+
+  .podcast-button-wrapper {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+  .image-4 {
+    width: 100%;
+  }
+
+  .badge {
+    width: 100%;
+  }
+}
+
